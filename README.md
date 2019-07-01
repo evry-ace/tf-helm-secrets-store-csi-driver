@@ -15,8 +15,8 @@ module "secret-store-csi-driver" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| secrets-store-csi-driver_version | Traefik version | string | `""` | yes |
-| secrets-store-csi-driver_namesoace | Namespace | string | `secrets-store-csi-driver_version` | no |
+| secrets-store-csi-driver_version | Secret store version | string | `""` | yes |
+| secrets-store-csi-driver_namespace | Namespace | string | `secrets-store-csi-driver_version` | no |
 
 ## Authors
 
