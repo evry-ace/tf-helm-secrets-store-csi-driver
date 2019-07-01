@@ -1,0 +1,7 @@
+name: tf-helm-secrets-store-csi-driver
+
+# Contact Information
+contact:
+  responsible: Evry ASA
+  slack_notifications: "#devops-notifications"
+  slack_alerts: "#devops-alerts"

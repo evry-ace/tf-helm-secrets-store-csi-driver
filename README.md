@@ -1,13 +1,13 @@
-# tf\_helm\_traefik
+# tf\_helm\_secret-store-csi-driver
 
-This module will deploy traefik as a service in traefik_namespace.
+This module will deploy secret-store-csi-driver secret-store-csi-driver namespace.
 
 ## Usage
 
 ```hcl
-module "traefik" {
-  source          = "github.com/evry-ace/tf-helm-traefik"
-  traefik_version = "${var.traefik_version}"
+module "secret-store-csi-driver" {
+  source                           = "github.com/evry-ace/secrets-store-csi-driver"
+  secrets-store-csi-driver_version = "${var.secrets-store-csi-driver_version}"
 }
 ```
 
@@ -15,9 +15,8 @@ module "traefik" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| traefik_version | Traefik version | string | `""` | yes |
-| traefik_namespace | Namespace | string | `kube-system` | no |
-| traefik_rbac_enabled | rbac toggle | bool | `true` | no |
+| secrets-store-csi-driver_version | Secret store version | string | `""` | yes |
+| secrets-store-csi-driver_namespace | Namespace | string | `secrets-store-csi-driver_version` | no |
 
 ## Authors
 
